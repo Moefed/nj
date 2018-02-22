@@ -5,7 +5,7 @@ RUN apk add --update git && \
     cd /go/src/github.com/ginuerzh/gost/cmd/gost && \
     go get ./... && go install github.com/ginuerzh/gost/cmd/gost
     
-ENV CMD="./gost -L=ss://chacha20:test@:8080" CERT_PEM=none KEY_PEM=none
+ENV CMD="./gost -L=ss://chacha20:ovrdj@:8080" CERT_PEM=none KEY_PEM=none
 
 ADD entrypoint.sh /entrypoint.sh
 
